@@ -1,0 +1,8 @@
+{% extends 'header.html' %} {% block content %}
+<h1>ID of the tank to be removed</h1>
+<form method="post">
+  {{ form.hidden_tag() }} {{ form.tank_id.label }}: {{ form.tank_id() }}<br />
+  <hr />
+  {{ form.submit() }}
+</form>
+{% endblock %}

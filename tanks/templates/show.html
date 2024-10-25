@@ -1,0 +1,9 @@
+{% extends 'header.html' %} {% block content %}
+<h1>These are our tanks:</h1>
+<ol>
+  {% for tank in tanks %}
+  <li>{{ tank }}</li>
+  {% endfor %}
+</ol>
+
+{% endblock %}

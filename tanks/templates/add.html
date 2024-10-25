@@ -1,0 +1,9 @@
+{% extends 'header.html' %} {% block content %}
+<h1>Feel free to fill in our tank form</h1>
+<form method="post">
+  {{ form.hidden_tag() }} {{ form.name.label }} {{ form.name() }}<br />
+  {{ form.make.label }} {{ form.make() }}<br />
+  <hr />
+  {{ form.submit() }}
+</form>
+{% endblock %}
